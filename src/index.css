@@ -1,0 +1,378 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  /* color: rgba(255, 255, 255, 0.87); */
+  color: #28292d;
+  background-color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #28292d;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  background-color: #fff;
+  background: #fff;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #fff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+p {
+  color: #000;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.italianno-regular {
+  font-family: "Italianno", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+.kanit-semibold {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* banner css and login css here  */
+main {
+  position: relative;
+}
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.mainSection {
+  padding-top: 3rem;
+}
+.loginBox {
+  text-align: right;
+  display: flex;
+  justify-content: end;
+}
+.loginBox ul li:nth-child(2) {
+  border-left: 2px solid #fff;
+  padding: 0 10px;
+}
+.loginBox ul li a {
+  color: #fff;
+}
+
+ul.list-unstyled li {
+  padding: 0 10px;
+  display: flex;
+}
+
+.mainHead {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+ul.list-unstyled.socialIcons img {
+  width: 22px;
+  height: 28px;
+}
+
+.banner-slider {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide.overlay {
+  /* opacity: 0.6; */
+  background: rgba(0, 0, 0, 0);
+}
+
+ul.navbar-brand li a {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* offcanvas css starts here */
+span.navbar-toggler-icon {
+  color: #fff !important;
+}
+
+/* about us css here  */
+img.hand-img {
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  z-index: -1;
+}
+
+/* slider banner testimonial css starts herre */
+/* button.slick-arrow.slick-prev {
+  left: 25px;
+}
+
+button.slick-arrow.slick-next {
+  right: 50px;
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 50px !important;
+}
+.testi-Banner {
+  text-align: center;
+  width: 50%;
+}
+.slick-dots li.slick-active button:before {
+  font-size: 20px;
+  color: #fff !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  color: #D9D9D9 !important;
+}
+ul.slick-dots {
+  bottom: 20px;
+  z-index: 10;
+} */
+/* about us css here  */
+img.hand-img {
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  z-index: -1;
+}
+/* =======================================
+   Footer CSS
+=========================================== */
+.footer-box p,
+ul.imp-link li a,
+ul.footer-contact li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.2s all ease;
+}
+
+ul.imp-link li,
+ul.footer-contact li {
+  list-style: none;
+  padding: 6px 0;
+}
+
+.footer-h {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+ul.footer-social-links {
+  display: flex;
+  padding-top: 10px;
+}
+
+ul.footer-social-links li {
+  list-style: none;
+  margin-right: 6px;
+}
+
+ul.footer-contact li {
+  display: flex;
+  align-items: center;
+}
+
+ul.footer-contact li i {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+ul.imp-link,
+ul.footer-contact {
+  padding: 0;
+  margin: 0;
+}
+.imp-link {
+  column-count: 2;
+  column-gap: 20px;
+}
+/* =======================================
+CONTACT SECTION CSS STSRTS HERE 
+=========================================== */
+.main-contact-form {
+  padding: 50px 0;
+}
+
+.contact-div img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.sec-title {
+  margin-bottom: 20px;
+}
+
+.sec-title__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact-form {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ac76d8;
+  border-radius: 5px;
+  background: transparent;
+}
+.contact-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+ul.footer-contact.contact-content li a {
+  color: #000;
+}
+/* =======================================
+testimonials
+=========================================== */
+.testimonialSection {
+  width: 100%;
+  height: 750px;
+  background-image: url(/src/assets/images/testimonialBg.png);
+  background-size: cover;
+  /* background-position: center center; */
+  display: flex !important;
+}
+.offcanvas-List svg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.offcanvas-List li a {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+@media (max-width: 1024px) {
+  .navbar-brand {
+    display: none; /* Hide navbar links on smaller screens */
+  }
+  .offcanvas {
+    display: block; /* Show hamburger menu button */
+  }
+}
+
+@media (max-width: 768px) {
+  .socialIcons li {
+    margin-bottom: 8px; /* Stack icons for smaller screens */
+  }
+  .loginBox ul {
+    margin-top: 10px;
+  }
+}
